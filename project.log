@@ -1,0 +1,62 @@
+2026-04-08 21:25:32 | INFO | P5 | === RUN START ===
+2026-04-08 21:25:32 | INFO | P5 | project=CINTEL
+2026-04-08 21:25:32 | INFO | P5 | repo_dir=cintel-05-drift-detection
+2026-04-08 21:25:32 | INFO | P5 | python=3.14.2
+2026-04-08 21:25:32 | INFO | P5 | os=Windows 11
+2026-04-08 21:25:32 | INFO | P5 | shell=powershell
+2026-04-08 21:25:32 | INFO | P5 | cwd=.
+2026-04-08 21:25:32 | INFO | P5 | github_actions=False
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | START main()
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | ROOT_DIR = .
+2026-04-08 21:25:32 | INFO | P5 | REFERENCE_FILE = data\reference_metrics_case.csv
+2026-04-08 21:25:32 | INFO | P5 | CURRENT_FILE = data\current_metrics_case.csv
+2026-04-08 21:25:32 | INFO | P5 | OUTPUT_FILE = artifacts\drift_summary_case.csv
+2026-04-08 21:25:32 | INFO | P5 | ARTIFACTS_DIR = artifacts
+2026-04-08 21:25:32 | INFO | P5 | Loaded 10 reference records
+2026-04-08 21:25:32 | INFO | P5 | Loaded 10 current records
+2026-04-08 21:25:32 | INFO | P5 | Calculated summary differences and drift flags
+2026-04-08 21:25:32 | INFO | P5 | Wrote drift summary file: C:\Repos\cintel-05-drift-detection\artifacts\drift_summary_case.csv
+2026-04-08 21:25:32 | INFO | P5 | Drift summary dataframe:
+2026-04-08 21:25:32 | INFO | P5 | shape: (1, 12)
+┌────────┬────────┬────────┬───────┬───┬───────┬───────┬───────┬───────┐
+│ refere ┆ refere ┆ refere ┆ curre ┆ … ┆ laten ┆ reque ┆ error ┆ laten │
+│ nce_av ┆ nce_av ┆ nce_av ┆ nt_av ┆   ┆ cy_me ┆ sts_i ┆ s_is_ ┆ cy_is │
+│ g_requ ┆ g_erro ┆ g_late ┆ g_req ┆   ┆ an_di ┆ s_dri ┆ drift ┆ _drif │
+│ ests   ┆ rs     ┆ ncy_ms ┆ uests ┆   ┆ ffere ┆ fting ┆ ing_f ┆ ting_ │
+│ ---    ┆ ---    ┆ ---    ┆ ---   ┆   ┆ nce_m ┆ _flag ┆ lag   ┆ flag  │
+│ f64    ┆ f64    ┆ f64    ┆ f64   ┆   ┆ s     ┆ ---   ┆ ---   ┆ ---   │
+│        ┆        ┆        ┆       ┆   ┆ ---   ┆ bool  ┆ bool  ┆ bool  │
+│        ┆        ┆        ┆       ┆   ┆ f64   ┆       ┆       ┆       │
+╞════════╪════════╪════════╪═══════╪═══╪═══════╪═══════╪═══════╪═══════╡
+│ 128.3  ┆ 2.3    ┆ 3835.0 ┆ 164.5 ┆ … ┆ 1835. ┆ true  ┆ true  ┆ true  │
+│        ┆        ┆        ┆       ┆   ┆ 0     ┆       ┆       ┆       │
+└────────┴────────┴────────┴───────┴───┴───────┴───────┴───────┴───────┘
+2026-04-08 21:25:32 | INFO | P5 | Let's make that a bit nicer to read...
+2026-04-08 21:25:32 | INFO | P5 | All remaining steps are about creating a nicer display.
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | Drift Detection Process: 
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | 1. Summarize each period with means.
+2026-04-08 21:25:32 | INFO | P5 | 2. Compute difference of means.
+2026-04-08 21:25:32 | INFO | P5 | 3. Flag drift if absolute difference of means exceeds a threshold.
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | Drift summary (one field per line):
+2026-04-08 21:25:32 | INFO | P5 | reference_avg_requests: 128.3
+2026-04-08 21:25:32 | INFO | P5 | reference_avg_errors: 2.3
+2026-04-08 21:25:32 | INFO | P5 | reference_avg_latency_ms: 3835.0
+2026-04-08 21:25:32 | INFO | P5 | current_avg_requests: 164.5
+2026-04-08 21:25:32 | INFO | P5 | current_avg_errors: 6.3
+2026-04-08 21:25:32 | INFO | P5 | current_avg_latency_ms: 5670.0
+2026-04-08 21:25:32 | INFO | P5 | requests_mean_difference: 36.2
+2026-04-08 21:25:32 | INFO | P5 | errors_mean_difference: 4.0
+2026-04-08 21:25:32 | INFO | P5 | latency_mean_difference_ms: 1835.0
+2026-04-08 21:25:32 | INFO | P5 | requests_is_drifting_flag: True
+2026-04-08 21:25:32 | INFO | P5 | errors_is_drifting_flag: True
+2026-04-08 21:25:32 | INFO | P5 | latency_is_drifting_flag: True
+2026-04-08 21:25:32 | INFO | P5 | Wrote long summary file: C:\Repos\cintel-05-drift-detection\artifacts\drift_summary_long_case.csv
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | Pipeline executed successfully!
+2026-04-08 21:25:32 | INFO | P5 | ========================
+2026-04-08 21:25:32 | INFO | P5 | END main()
