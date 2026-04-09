@@ -1,4 +1,9 @@
 # cintel-05-drift-detection
+## Continuous Intelligence Module 5 Dift Detection
+## by Jarred Gastreich, April 2026
+
+## Updates
+Changed authorship and updated github directory.
 
 [![Python 3.14+](https://img.shields.io/badge/python-3.14%2B-blue?logo=python)](#)
 [![MIT](https://img.shields.io/badge/license-see%20LICENSE-yellow.svg)](./LICENSE)
