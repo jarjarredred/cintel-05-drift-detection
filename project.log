@@ -121,3 +121,38 @@
 2026-04-13 00:04:47 | INFO | P5 | Pipeline executed successfully!
 2026-04-13 00:04:47 | INFO | P5 | ========================
 2026-04-13 00:04:47 | INFO | P5 | END main()
+2026-04-13 00:30:17 | INFO | P5 | === RUN START ===
+2026-04-13 00:30:17 | INFO | P5 | project=CINTEL
+2026-04-13 00:30:17 | INFO | P5 | repo_dir=cintel-05-drift-detection
+2026-04-13 00:30:17 | INFO | P5 | python=3.14.2
+2026-04-13 00:30:17 | INFO | P5 | os=Windows 11
+2026-04-13 00:30:17 | INFO | P5 | shell=powershell
+2026-04-13 00:30:17 | INFO | P5 | cwd=.
+2026-04-13 00:30:17 | INFO | P5 | github_actions=False
+2026-04-13 00:30:17 | INFO | P5 | START main()
+2026-04-13 00:30:17 | INFO | P5 | Loaded 10 reference records
+2026-04-13 00:30:17 | INFO | P5 | Loaded 10 current records
+2026-04-13 00:30:18 | INFO | P5 | Calculated summary differences, percentages, and drift flags
+2026-04-13 00:30:18 | INFO | P5 | Wrote drift summary file: C:\Repos\cintel-05-drift-detection\artifacts\drift_summary_jarred2.csv
+2026-04-13 00:30:18 | INFO | P5 | Drift summary (one field per line):
+2026-04-13 00:30:18 | INFO | P5 | reference_avg_requests: 128.3
+2026-04-13 00:30:18 | INFO | P5 | reference_avg_errors: 2.3
+2026-04-13 00:30:18 | INFO | P5 | reference_avg_latency_ms: 3835.0
+2026-04-13 00:30:18 | INFO | P5 | current_avg_requests: 164.5
+2026-04-13 00:30:18 | INFO | P5 | current_avg_errors: 6.3
+2026-04-13 00:30:18 | INFO | P5 | current_avg_latency_ms: 5670.0
+2026-04-13 00:30:18 | INFO | P5 | requests_mean_difference: 36.19999999999999
+2026-04-13 00:30:18 | INFO | P5 | errors_mean_difference: 4.0
+2026-04-13 00:30:18 | INFO | P5 | latency_mean_difference_ms: 1835.0
+2026-04-13 00:30:18 | INFO | P5 | requests_pct_change: 28.22
+2026-04-13 00:30:18 | INFO | P5 | errors_pct_change: 173.91
+2026-04-13 00:30:18 | INFO | P5 | latency_pct_change: 47.85
+2026-04-13 00:30:18 | INFO | P5 | requests_is_drifting_flag: True
+2026-04-13 00:30:18 | INFO | P5 | errors_is_drifting_flag: True
+2026-04-13 00:30:18 | INFO | P5 | latency_is_drifting_flag: True
+2026-04-13 00:30:18 | INFO | P5 | requests_is_critical: False
+2026-04-13 00:30:18 | INFO | P5 | errors_is_critical: True
+2026-04-13 00:30:18 | INFO | P5 | latency_is_critical: False
+2026-04-13 00:30:18 | INFO | P5 | total_drift_count: 3
+2026-04-13 00:30:18 | INFO | P5 | Wrote long summary file: C:\Repos\cintel-05-drift-detection\artifacts\drift_summary_long_jarred2.csv
+2026-04-13 00:30:18 | INFO | P5 | END main()
